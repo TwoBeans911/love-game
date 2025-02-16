@@ -16,8 +16,7 @@ body {
 
 /* 让图片大小适中 */
 #mainImage {
-    max-width: 80%; /* 小屏幕默认最大宽度为父容器宽度的 80% */
-    height: auto;
+    width: 200px;
     transition: all 0.3s ease;
 }
 
@@ -61,32 +60,4 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* 新增或修改样式 */
-.yes-image {
-    max-width: 80%; /* 小屏幕默认最大宽度为父容器宽度的 80% */
-    height: auto;
-}
-
-/* 媒体查询：在屏幕宽度大于 768px 时应用不同样式 */
-@media (min-width: 768px) {
-    #mainImage {
-        max-width: 50%; /* 在中等及以上屏幕上最大宽度为父容器宽度的 50% */
-    }
-
-    .yes-image {
-        max-width: 50%; /* 在中等及以上屏幕上最大宽度为父容器宽度的 50% */
-    }
-}
-
-/* 媒体查询：在屏幕宽度大于 1200px 时应用不同样式 */
-@media (min-width: 1200px) {
-    #mainImage {
-        max-width: 30%; /* 在大屏幕上最大宽度为父容器宽度的 30% */
-    }
-
-    .yes-image {
-        max-width: 30%; /* 在大屏幕上最大宽度为父容器宽度的 30% */
-    }
 }
